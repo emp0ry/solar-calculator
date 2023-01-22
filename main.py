@@ -202,5 +202,5 @@ if __name__ == '__main__':
         print(f"Where: Latitude = {latitude_degree}° {latitude_minute}' "+f'{int(latitude_second)}", Longitude = {longitude_degree}° '+f"{longitude_minute}' "+f'{int(longitude_second)}"')
         print(f"Azimuth: {azimuth_degree}° {azimuth_minute}' "+f'{int(azimuth_second)}" or {round(azimuth, 4)}')
         print(f"Elevation: {elevation_degree}° {elevation_minute}' "+f'{int(elevation_second)}" or {round(elevation, 4)}')
-        print(f'Sunrise = {sunrise_hour}:{sunrise_minute}:{int(sunrise_second)}, Sunset = {sunset_hour}:{sunset_minute}:{int(sunset_second)}')
+        print(f'Sunrise = {str(0)+str(sunrise_hour) if sunrise_hour//10 == 0 else sunrise_hour}:{str(0)+str(sunrise_minute) if sunrise_minute//10 == 0 else sunrise_minute}:{str(0)+str(int(sunrise_second)) if sunrise_second//10 == 0 else int(sunrise_second)}, Sunset = {str(0)+str(sunset_hour) if sunset_hour//10 == 0 else sunset_hour}:{str(0)+str(sunset_minute) if sunset_minute//10 == 0 else sunset_minute}:{str(0)+str(int(sunset_second)) if sunset_second//10 == 0 else int(sunset_second)}')
         time.sleep(0.3)
