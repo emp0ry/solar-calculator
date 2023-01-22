@@ -199,7 +199,7 @@ if __name__ == '__main__':
         # Output the results
         os.system('cls')
         print(f'When: {"0" if (day < 10) else ""}{day}.{"0" if (month < 10) else ""}{month}.{year} {"0" if (hour < 10) else ""}{hour}:{"0" if (minute < 10) else ""}{minute}:{"0" if (second < 10) else ""}{int(second)} UTC{"+" if (time_zone > 0) else ""}{time_zone}')
-        print(f"Where: Latitude = {latitude_degree}° {latitude_minute}' "+f'{int(latitude_second)}", Longitude =  {longitude_degree}° '+f"{longitude_minute}' "+f'{int(longitude_second)}"')
+        print(f"Where: Latitude = {latitude_degree}° {latitude_minute}' "+f'{int(latitude_second)}", Longitude = {longitude_degree}° '+f"{longitude_minute}' "+f'{int(longitude_second)}"')
         print(f"Azimuth: {azimuth_degree}° {azimuth_minute}' "+f'{int(azimuth_second)}" or {round(azimuth, 4)}')
         print(f"Elevation: {elevation_degree}° {elevation_minute}' "+f'{int(elevation_second)}" or {round(elevation, 4)}')
         print(f'Sunrise = {sunrise_hour}:{sunrise_minute}:{int(sunrise_second)}, Sunset = {sunset_hour}:{sunset_minute}:{int(sunset_second)}')
